@@ -30,8 +30,8 @@ def getKeywords_textrank(data,topK):
     return result
 
 def main():
-    dataFile = 'data/sample_data.csv'
-    data = pd.read_csv(dataFile)
+    dataFile = 'data/sample_data.xlsx'
+    data = pd.read_excel(dataFile)
     result = getKeywords_textrank(data,10)
     result.to_csv("result/keys_TextRank.csv",index=False)
 
